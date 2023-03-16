@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs', {title: `${beer.type} | Brewski Buddy`}) %>
+    <link rel="stylesheet" href="/styles/beer-details.css">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <div>
+        <img src="<%= beer.photo %>">
+        <h2 class="beer-type"><%= beer.type %></h2>
+        <section>
+            <p><strong>Alcohol By Volume (ABV):</strong> <%= beer.alcoholByVolume %></p>
+            <p><strong>Description:</strong> <%= beer.description %></p>
+            <p><strong>Rating:</strong> <%= beer.rating %></p>
+            <p><strong>Variations:</strong> <%= beer.condition %></p>
+            <p><strong>Food Pairings:</strong> <%= beer.foodPairings %></p>
+        </section>
+
+        <section class="actions">
+            <button class="btn"><a href="/beers/<%= beer._id %>/edit">Edit</a></button>
+            <form method="POST" action="/beers/<%= beer._id %>?_method=DELETE">
+                <input class="btn" type="submit" value="Delete" />
+            </form>
+            <button class="btn"><a href="/beers/<%= beer._id %>/reviews">Review</a></button>
+        </section>
+        
+    <section class="reviews-list">
+        <% for (let review of beer.reviews) { %>
+            <p>Reviewer: <%= review.reviewer%></p>
+            <p>Title: <%= review.title%></p>
+        <% } %>
+    </section>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>

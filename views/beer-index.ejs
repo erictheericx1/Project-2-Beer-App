@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('./partials/head.ejs', {title: 'Brewski Buddy'}) %>
+    <link rel="stylesheet" href="/styles/beer-index.css">
+</head>
+
+<body>
+    <%- include('./partials/nav.ejs') %>
+
+    <section class="hero">
+        <h2>Top Picks</h2>
+        <h3>Look around and see if anything catches your attention!</h3>
+    </section>
+
+    <main>
+        <section class="listings">
+            <ul>
+                <% for (let beer of beers) { %>
+                <li>
+                    <figure>
+                        <img src="<%= beer.photo %>">
+                        <figcaption>
+                            <h4><%= beer.type %></h4>
+                            <p><%= beer.alcoholByVolume %> %, <%= beer.description %>, <%= beer.rating %></p>
+                            <a href="/beers/<%= beer._id %>">Learn More</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <% } %>
+            </ul>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>
