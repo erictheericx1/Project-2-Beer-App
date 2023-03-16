@@ -25,7 +25,7 @@
             <form method="POST" action="/beers/<%= beer._id %>?_method=DELETE">
                 <input class="btn" type="submit" value="Delete" />
             </form>
-            <button class="btn"><a href="/beers/<%= beer._id %>/reviews">Review</a></button>
+            <button class="btn"><a href="/reviews/new/<%= beer._id %>">Review</a></button>
         </section>
         
     <section class="reviews-list">

@@ -14,9 +14,8 @@
             <ul>
                 <% for (let rev of revs) { %>
                 <li>
-                    <h4><%= app.reviewerName %> - <%= app.reviewerTitle %></h4>
-                    <p>Created: <%= app.reviewDate.toDateString() %></p>
-                    <a href="/reviews/<%= app._id %>">Read More</a>
+                    <h4><%= rev.reviewerName %> - <%= rev.reviewerTitle %></h4>
+                    <a href="/reviews/<%= rev._id %>">Read More</a>
                 </li>
                 <% } %>
             </ul>

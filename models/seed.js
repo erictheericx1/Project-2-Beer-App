@@ -6,7 +6,8 @@ const beers = [
     description: "A crisp and refreshing lager with a light malt flavor and a clean finish.",
     rating: 4.0,
     variations: "Pilsner, Vienna, Helles",
-    foodPairing: "Grilled chicken, seafood, spicy foods"
+    foodPairing: "Grilled chicken, seafood, spicy foods",
+    isFeatured: true
   },
   {
     type: "Ale",
@@ -15,7 +16,8 @@ const beers = [
     description: "An amber ale with a rich caramel flavor and a hint of citrus hops.",
     rating: 4.0,
     variations: "Pale ale, Brown ale, Belgian ale",
-    foodPairing: "BBQ, spicy food, pizza"
+    foodPairing: "BBQ, spicy food, pizza",
+    isFeatured: false
   },
   {
     type: "Stout",
@@ -24,7 +26,8 @@ const beers = [
     description: "A creamy and full-bodied stout with notes of coffee and dark chocolate.",
     rating: 5.0,
     variations: "Imperial stout, Milk stout, Oatmeal stout",
-    foodPairing: "Chocolate desserts, smoked meats, strong cheeses"
+    foodPairing: "Chocolate desserts, smoked meats, strong cheeses",
+    isFeatured: false
   },
   {
     type: "Porter",
@@ -33,7 +36,8 @@ const beers = [
     description: "A rich and complex porter with notes of chocolate, coffee, and roasted malt.",
     rating: 4.5,
     variations: "Baltic porter, Robust porter, Smoked porter",
-    foodPairing: "BBQ, grilled meats, chocolate desserts"
+    foodPairing: "BBQ, grilled meats, chocolate desserts",
+    isFeatured: false
   },
   {
     type: "IPA",
@@ -42,7 +46,8 @@ const beers = [
     description: "A hop-forward IPA with notes of citrus and pine.",
     rating: 3.5,
     variations: "Double IPA, West Coast IPA, New England IPA",
-    foodPairing: "Spicy food, grilled meats, strong cheeses"
+    foodPairing: "Spicy food, grilled meats, strong cheeses",
+    isFeatured: false
   },
   {
     type: "Sour",
@@ -51,7 +56,8 @@ const beers = [
     description: "A tart and fruity sour ale with a refreshing finish.",
     rating: 3.5,
     variations: "Gose, Berliner Weisse, Fruited sour",
-    foodPairing: "Salads, seafood, spicy food"
+    foodPairing: "Salads, seafood, spicy food",
+    isFeatured: false
   },
   {
     type: "Smoothie Sour",
@@ -60,7 +66,8 @@ const beers = [
     description: "A sweet and tangy sour ale with a creamy mouthfeel and flavors of fruit and vanilla.",
     rating: 5.0,
     variations: "Fruited smoothie sour, Milkshake sour",
-    foodPairing: "Fruit desserts, brunch, cheese plates"
+    foodPairing: "Fruit desserts, brunch, cheese plates",
+    isFeatured: false
   }
 
 ]

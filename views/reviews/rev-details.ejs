@@ -36,14 +36,6 @@
                     <h2><%= app.rating %></h2>
                 </td>
             </tr>
-            <tr>
-                <th>
-                    <h2>Date submitted:</h2>
-                </th>
-                <td>
-                    <h2><%= app.reviewDate.toLocaleDateString() %></h2>
-                </td>
-            </tr>
         </table>
 
         <form method="POST" action="/reviews/<%= app._id %>?_method=DELETE">

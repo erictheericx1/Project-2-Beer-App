@@ -11,8 +11,8 @@ const beerSchema = new mongoose.Schema({
     rating: { type: Number, required: true },
     variations: { type: String, required: true },
     foodPairing: { type: String, required: true },
+    isFeatured: { type: Boolean, default: false },
     reviews: [reviewSchema]
-    // isFeatured: { type: Boolean, default: false },
 });
 
 // Export the schema as a Monogoose model. 

@@ -11,6 +11,6 @@ const mongodbUri = process.env.MONGODBURI;
 
 module.exports = {
     Beer: require('./beer'),
-    seedBeer: require('./seed'),
-    Review: require('./review')
+    seedBeer: require('./seed')
+    // Review: require('./review')
 }
