@@ -12,7 +12,7 @@
     <main>
         <section class="listings">
             <ul>
-                <% for (let app of apps) { %>
+                <% for (let rev of revs) { %>
                 <li>
                     <h4><%= app.reviewerName %> - <%= app.reviewerTitle %></h4>
                     <p>Created: <%= app.reviewDate.toDateString() %></p>

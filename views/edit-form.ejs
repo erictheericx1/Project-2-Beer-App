@@ -35,16 +35,12 @@
         <br>
         <!-- foodPairings input -->
         <label for="foodPairings">Food Pairings:</label>
-        <select id="foodPairings" name="foodPairings" required>
         <input type="text" id="foodPairings" name="foodPairings" value="<%= beer.foodPairings %>">
-        </select>
+        
         <br>
         <!-- Photo input -->
         <label for="photo">Photo (URL):</label>
         <input type="text" id="photo" name="photo" value="<%= beer.photo %>" required>
-        <br>
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" required></textarea>
         <br>
         <!-- Submit button -->
         <input type="submit" value="Create beer">
