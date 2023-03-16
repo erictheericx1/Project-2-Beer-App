@@ -70,14 +70,14 @@ app.get('/', function (req, res) {
 app.get('/seed', function (req, res) {
     // Remove any existing beers
     db.Beer.deleteMany({})
-        .then(removedbeers => {
-            console.log(`Removed ${removedbeers.length} beers`)
+        .then(removedBeers => {
+            console.log(`Removed ${removedBeers.length} beers`)
 
             // Seed the beers collection with the seed data
-            db.Beer.insertMany(db.seedbeers)
-                .then(addedbeers => {
-                    console.log(`Added ${addedbeers.length} beers to be adopted`)
-                    res.json(addedbeers)
+            db.Beer.insertMany(db.seedBeer)
+                .then(addedBeers => {
+                    console.log(`Added ${addedBeers.length} beers to be tasted`)
+                    res.json(addedBeers)
                 })
         })
 });
