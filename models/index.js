@@ -10,7 +10,7 @@ const mongodbUri = process.env.MONGODBURI;
 
 
 module.exports = {
-    Product: require('./product'),
-    seedProduct: require('./seed'),
+    Beer: require('./beer'),
+    seedBeer: require('./seed'),
     Review: require('./review')
 }
