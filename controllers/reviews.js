@@ -6,8 +6,8 @@ const router = express.Router()
 
 /* Require the db connection, and models
 --------------------------------------------------------------- */
-const db = require('../models');
-const beer = require('../models/beer');
+const db = require('../models')
+// const beer = require('../models/beer');
 
 /* Routes
 --------------------------------------------------------------- */

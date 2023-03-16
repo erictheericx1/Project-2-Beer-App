@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head.ejs', {title: 'My reviews | About Brewski Buddy'}) %>
+    <link rel="stylesheet" href="/styles/rev-details.css">
+</head>
+
+<body>
+    <%- include('../partials/nav.ejs') %>
+
+    <section class="review">
+        <h1>Reviewer: <%= app.reviewerName %></h1>
+        <table>
+            <tr>
+                <th>
+                    <h2><Title></Title>:</h2>
+                </th>
+                <td>
+                    <h2><%= app.reviewerTitle %></h2>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h2>Content:</h2>
+                </th>
+                <td>
+                    <h2><%= app.reviewercontent %></h2>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h2>Rating:</h2>
+                </th>
+                <td>
+                    <h2><%= app.rating %></h2>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    <h2>Date submitted:</h2>
+                </th>
+                <td>
+                    <h2><%= app.reviewDate.toLocaleDateString() %></h2>
+                </td>
+            </tr>
+        </table>
+
+        <form method="POST" action="/reviews/<%= app._id %>?_method=DELETE">
+            <input class="btn" type="submit" value="Delete" />
+        </form>
+    </section>
+
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>
