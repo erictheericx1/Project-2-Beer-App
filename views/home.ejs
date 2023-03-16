@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <%- include('./partials/head.ejs', {title: 'Furever Friends'}) %>
+    <%- include('./partials/head.ejs', {title: 'Brewski Buddy'}) %>
     <link rel="stylesheet" href="/styles/home.css">
 </head>
 
@@ -11,32 +11,31 @@
 
     <main>
         <section class="hero">
-            <h2>Find Your New Best Friend</h2>
-            <a href="/pets" class="btn">Adopt Now!</a>
+            <h2>Get Ready to go on a Hop-ortunity of a lifetime!</h2>
+            <a href="/beers" class="btn">Take a look around!</a>
         </section>
 
         <section class="about">
             <h2>About Us</h2>
-            <p>Furever Friends is a non-profit organization dedicated to finding loving homes for animals in need. We
-                work with shelters and rescue groups across the country to help connect pets with their new families.
+            <p>Get ready to indulge in a selection of flavorful brews that are sure to tantalize your taste buds. Whether you're a seasoned beer connoisseur or a newbie to the scene, this assortment of beers has something for everyone. 
             </p>
             <a href="/about" class="btn">Learn More</a>
         </section>
 
-        <section class="featured-pets">
-            <h2>Featured Pets</h2>
-            <ul class="pet-grid">
-                <% for (let pet of pets) { %>
+        <section class="featured-beers">
+            <h2>Featured beers</h2>
+            <ul class="beer-grid">
+                <% for (let beer of beers) { %>
                 <li>
                     <figure>
-                        <img src="<%= pet.photo %>" alt="Kitten">
+                        <img src="<%= beer.photo %>" alt="brew">
                     </figure>
                     <figcaption>
                         <div class="featured-info">
-                            <h3><%= pet.name %></h3>
-                            <p>Age: <%= pet.age %> yr(s)</p>
+                            <h3><%= beer.type %></h3>
+                            <p>Alcohol By Volume (ABV): <%= beer.alcoholByVolume %> % </p>
                         </div>
-                        <a href="/pets/<%= pet._id %>" class="btn">Learn More</a>
+                        <a href="/beers/<%= beer._id %>" class="btn">Learn More</a>
                     </figcaption>
                 </li>
                 <% } %>
