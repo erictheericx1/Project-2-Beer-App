@@ -2,35 +2,62 @@
 <html lang="en">
 
 <head>
-    <%- include('./partials/head.ejs', {title: `${beer.type} | Brewski Buddy`}) %>
-    <link rel="stylesheet" href="/styles/beer-details.css">
+    <%- include('./partials/head.ejs', {title: 'Add a Listing | Brewski Buddy'}) %>
+    <link rel="stylesheet" href="/styles/beer-form.css">
 </head>
 
 <body>
     <%- include('./partials/nav.ejs') %>
 
-    <div>
-        <img src="<%= beer.photo %>">
+    <section class="hero">
+        <h2>Create a Listing</h2>
+        <h4><i>Did we miss one?  Help us out, add it!</i></h4>
+    </section>
 
-        <h2 class="beer-type"><%= beer.type %></h2>
-
-        <section>
-            <p><strong>Alcohol By Volume (ABV):</strong> <%= beer.alcoholByVolume %></p>
-            <p><strong>Description:</strong> <%= beer.description %></p>
-            <p><strong>Rating:</strong> <%= beer.rating %></p>
-            <p><strong>Variations:</strong> <%= beer.variations %></p>
-            <p><strong>Food Pairings:</strong> <%= beer.foodPairings %></p>
-        </section>
-
-        <section class="actions">
-            <button class="btn"><a href="/beers/<%= beer._id %>/edit">Edit</a></button>
-            <form method="POST" action="/beers/<%= beer._id %>?_method=DELETE">
-                <input class="btn" type="submit" value="Delete" />
-            </form>
-            <button class="btn"><a href="/applications/new/<%= beer._id %>">Check it out</a></button>
-        </section>
-
-    </div>
+    <form method="POST" action="/beers">
+        <!-- type input -->
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="type" required>
+        <br>
+        <!-- alcoholByVolume input -->
+        <label for="alcoholByVolume">Alcohol By Volume (ABV):</label>
+        <input type="text" id="alcoholByVolume" name="alcoholByVolume" required>
+        <br>
+        <!-- Photo input -->
+        <label for="photo">Photo (URL):</label>
+        <input type="text" id="photo" name="photo" required>
+        <br>
+        <!-- discription input -->
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+        <br>
+        <!-- rating input -->
+        <label for="rating">rating:</label>
+        <select id="rating" name="rating">
+            <optgroup label=" ratings">
+                <option value="0.5">0.5</option>
+                <option value="1.0">1.0</option>
+                <option value="1.5">1.5</option>
+                <option value="2.0">2.0</option>
+                <option value="2.5">2.5</option>
+                <option value="3.0">3.0</option>
+                <option value="3.5">3.5</option>
+                <option value="4.0">4.0</option>
+                <option value="4.5">4.5</option>
+                <option value="5.0">5.0</option>
+            </optgroup>
+        </select>
+        <br>
+        <!-- variations input -->
+        <label for="variations">Variations:</label>
+        <input type="text" id="variations" name="variations" value="Unknown">
+        <br>
+        <!-- foodPairing input -->
+        <label for="foodPairing">Food Pairing:</label>
+        <input type="text" id="foodPairing" name="foodPairing" value="Unknown">
+        
+        <input type="submit" value="Create beer">
+    </form>
 
     <%- include('./partials/footer.ejs') %>
 </body>

@@ -54,7 +54,7 @@ router.get('/:id', (req, res) => {
         { 'reviews.$': true, _id: false }
     )
         .then(beer => {
-            res.render('reviews/app-details', {
+            res.render('reviews/rev-details', {
                 app: beer.reviews[0]
             })
         })
