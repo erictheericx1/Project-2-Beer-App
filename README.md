@@ -1,6 +1,21 @@
 # Project-2-Beer-App
 
+Route Table
+------------
 
+|       **URL**       | **REST Route** | **HTTP Verb** | **CRUD Action** |   **EJS View(s)**            | **Created Yet?**  |
+| ---------------     | -------------- | ------------- | --------------- | ------------------------     | ----------------- |
+| /                   | N/A            | GET           | read            | home.ejs                     | YES               |
+| /beers           | index          | GET           | read            | beer-index.ejs            | YES               |
+| /beers/:id       | show           | GET           | read            | beer-details.ejs, 404.ejs | YES, NO           |
+| /beers/new       | new            | GET           | N/A             | new-beer.ejs              | NO                |
+| /beers           | create         | POST          | create          |                              | NO                |
+| /beers/:id/edit  | edit           | GET           | read            | edit-beer.ejs             | NO                |
+| /beers/:id       | update         | PATCH/PUT     | update          |                              | NO                |
+| /beers/:id       | destroy        | DELETE        | delete          |                              | NO                |
+
+| /about              | N/A            | GET           | N/A             | about.ejs                    | NO                |
+| /*                  | N/A            | GET           | N/A             | 404.ejs                      | NO                |
 
 
 Installation Instructions

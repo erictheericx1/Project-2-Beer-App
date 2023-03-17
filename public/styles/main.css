@@ -3,7 +3,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scrollbar-color: #333;
+  scrollbar-color: #000000;
   scrollbar-width: 10px;
 }
 
@@ -17,13 +17,13 @@
   border-radius: 2px;
 }
 
-/* General styles */
+/* //General styles */
 body {
+  background: linear-gradient(to top, #faf4dd, #857e56);
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
-  background-color: #f7f7f7;
+  color: #000000;
   min-height: 100vh;
 }
 
@@ -36,12 +36,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header styles */
+/* // Header styles */
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #887646d0;
   padding: 1rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
@@ -54,6 +54,11 @@ h1 a:hover {
   text-decoration: none;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 nav ul {
   display: flex;
   list-style: none;
@@ -69,12 +74,10 @@ nav a {
 
 /* Hero section styles */
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #e8f1f2;
-  height: 40vh;
+  /* background-color: #d7ccc8; */
+  color: #1f1f1e;
+  padding: 80px;
+  text-align: center;
 }
 
 .hero h2 {
@@ -93,33 +96,45 @@ nav a {
   text-align: center;
 }
 
+/* Content section */
+.content {
+  /* background-color: #e0cfc2; */
+  color: #1f1f1e;
+  padding: 80px;
+  text-align: center;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
 .btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  background-color: #333;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  background-color: #a39873;
+  border-radius: 30px;
+  color: #f7ede2;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #555;
+  background-color: #dbd6b5;
+  color: #7c574f;
 }
 
 /* Footer styles */
 footer {
+  /* display: flex;
+  justify-content: space-between; */
   text-align: center;
+  background-color: #494842d0;
   padding: 1rem;
-  background-color: #95a124;
-  width: calc(100vw - 1rem);
-}
-
-footer * {
-  color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 footer ul {
-  justify-content: center;
+  /* justify-content: center; */
+  text-align: center;
 }

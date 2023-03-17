@@ -1,6 +1,5 @@
 /* About section styles */
 .about {
-  background-color: #fff;
   padding: 2rem;
 }
 
@@ -13,8 +12,8 @@
   margin-bottom: 1rem;
 }
 
-/* Featured beers section styles */
-.featured-beers {
+/*//Featured beers section styles
+/* .featured-beers {
   background-color: #f7f7f7;
   padding: 2rem;
 }
@@ -65,5 +64,5 @@ figcaption {
 }
 
 .featured-info p {
-  font-size: calc(0.5rem + 0.5vw);
-}
+  font-size: calc(0.5rem + 0.5vw); */
+/* } */ 

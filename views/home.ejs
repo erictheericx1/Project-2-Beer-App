@@ -3,7 +3,6 @@
 
 <head>
     <%- include('./partials/head.ejs', {title: 'Brewski Buddy'}) %>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="/styles/home.css">
 </head>
 
@@ -12,18 +11,20 @@
 
     <main>
         <section class="hero">
-            <h2>Get Ready to go on a Hop-ortunity of a lifetime!</h2>
+            <h2>PLEASE DRINK RESPONSIBLY ❤️</h2>
+            <p>the consumption of alcohol can impair your judgment and abilities. It is important to know your limits and avoid excessive consumption. This app is intended for users who are of legal drinking age. The app does not encourage the misuse or abuse of alcohol, and we are not responsible for any negative consequences that may result from the use of this app.  If you think or feel like you have a problem with drinking, please reach out to someone.
+            </p>
             <a href="/beers" class="btn">Take a look around!</a>
         </section>
 
-        <section class="about">
-            <h2>About Us</h2>
+        <section class="content">
+            <h2>Get ready to be Hop-sessed!</h2>
             <p>Get ready to indulge in a selection of flavorful brews that are sure to tantalize your taste buds. Whether you're a seasoned beer connoisseur or a newbie to the scene, this assortment of beers has something for everyone. 
             </p>
             <a href="/about" class="btn">Learn More</a>
         </section>
 
-        <section class="featured-beers">
+        <!-- <section class="featured-beers">
             <h2>Featured beers</h2>
             <ul class="beer-grid">
                 <% for (let beer of beers) { %>
@@ -41,11 +42,10 @@
                 </li>
                 <% } %>
             </ul>
-        </section>
+        </section> -->
     </main>
 
     <%- include('./partials/footer.ejs') %>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 

@@ -1,18 +1,17 @@
 /* Center the main content */
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
-  background-color: white;
+  padding: 10px;
 }
 
 /* Style the content section */
 .content {
-  margin-top: 50px;
+  /* margin-top: 20px; */
   line-height: 1.5;
 }
 
-.content h2 {
+.content h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
