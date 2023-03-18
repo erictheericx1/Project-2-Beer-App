@@ -28,14 +28,14 @@
             <button class="btn"><a href="/reviews/new/<%= beer._id %>">Review</a></button>
         </section>
         
-    <section class="reviews-list">
-        <% for (let review of beer.reviews) { %>
-            <p>Reviewer: <%= review.reviewer%></p>
-            <p>Title: <%= review.title%></p>
-        <% } %>
-    </section>
-
-    <%- include('./partials/footer.ejs') %>
+        <section class="reviews-list">
+            <% for (let review of beer.reviews) { %>
+                <p>Reviewer: <%= review.reviewer%></p>
+                <p>Title: <%= review.title%></p>
+            <% } %>
+        </section>
+    </div>
+    <%- include('./partials/footer.ejs') %>    
 </body>
 
 </html>

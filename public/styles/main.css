@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 /* Reset styles for cross-browser consistency */
 * {
   box-sizing: border-box;
@@ -17,9 +18,9 @@
   border-radius: 2px;
 }
 
-/* //General styles */
+/* General styles */
 body {
-  background: linear-gradient(to top, #faf4dd, #857e56);
+  background: linear-gradient(to top, #faf4dd, #857e56); /*linear-gradient help from classmate and youtube */
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -28,22 +29,26 @@ body {
 }
 
 a {
-  color: #333;
+  font-family: 'Indie Flower', cursive,serif;
+  color: #f1f1ea;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #ece92d;
 }
 
-/* // Header styles */
+/* Header styles */
 header {
+  font-family: 'Indie Flower', cursive,serif;
+  color: #faf4dd;
+  text-shadow: .5px .5px .5px #68665f;
+  font-weight: bolder;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #887646d0;
+  background-color: #464233;
   padding: 1rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -109,32 +114,33 @@ p {
 }
 
 .btn {
-  background-color: #a39873;
+  background-color: #464233;
   border-radius: 30px;
   color: #f7ede2;
   font-weight: bold;
   padding: 15px 30px;
   text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #dbd6b5;
-  color: #7c574f;
+  background-color: #a39873;
+  color: #534f36;
+  text-decoration: none;
 }
 
 /* Footer styles */
 footer {
-  /* display: flex;
-  justify-content: space-between; */
+  font-family: 'Indie Flower', cursive,serif;
+  color: #f1f1ea;
+  display: flex; 
+  flex-direction: column;
   text-align: center;
-  background-color: #494842d0;
+  background-color: #464233;
   padding: 1rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-footer ul {
-  /* justify-content: center; */
-  text-align: center;
+footer nav {
+  display: flex;
+  justify-content: center;  
 }
