@@ -81,13 +81,13 @@ nav a {
 .hero {
   /* background-color: #d7ccc8; */
   color: #1f1f1e;
-  padding: 80px;
+  padding: 40px;
   text-align: center;
 }
 
 .hero h2 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
   text-align: center;
 }
 
