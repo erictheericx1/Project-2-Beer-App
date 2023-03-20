@@ -1,28 +1,37 @@
-# Project-2-Beer-App
+# Project-2-Beer-rev
+
+![front page](assets/rev.png)
 
 Route Table
 ------------
 
-|       **URL**       | **REST Route** | **HTTP Verb** | **CRUD Action** |   **EJS View(s)**            | **Created Yet?**  |
-| ---------------     | -------------- | ------------- | --------------- | ------------------------     | ----------------- |
-| /                   | N/A            | GET           | read            | home.ejs                     | YES               |
-| /beers           | index          | GET           | read            | beer-index.ejs            | YES               |
-| /beers/:id       | show           | GET           | read            | beer-details.ejs, 404.ejs | YES, NO           |
-| /beers/new       | new            | GET           | N/A             | new-beer.ejs              | NO                |
-| /beers           | create         | POST          | create          |                              | NO                |
-| /beers/:id/edit  | edit           | GET           | read            | edit-beer.ejs             | NO                |
-| /beers/:id       | update         | PATCH/PUT     | update          |                              | NO                |
-| /beers/:id       | destroy        | DELETE        | delete          |                              | NO                |
-
-| /about              | N/A            | GET           | N/A             | about.ejs                    | NO                |
-| /*                  | N/A            | GET           | N/A             | 404.ejs                      | NO                |
+|       **URL**           | **REST Route** | **HTTP Verb** | **CRUD Action** |   **EJS View(s)**         | **Created Yet?**  |
+| ---------------         | -------------- | ------------- | --------------- | ------------------------  | ----------------- |
+| /                       | N/A            | GET           | read            | home.ejs                  | YES               |
+| /beers                  | index          | GET           | read            | beer-index.ejs            | YES               |
+| /beers/:id              | show           | GET           | read            | beer-details.ejs, 404.ejs | YES, NO           |
+| /beers/new              | new            | GET           | N/A             | new-beer.ejs              | NO                |
+| /beers                  | create         | POST          | create          |                           | NO                |
+| /beers/:id/edit         | edit           | GET           | read            | edit-beer.ejs             | NO                |
+| /beers/:id              | update         | PATCH/PUT     | update          |                           | NO                |
+| /beers/:id              | destroy        | DELETE        | delete          |                           | NO                |
+| /about                  | N/A            | GET           | N/A             | about.ejs                 | NO                |
+| /*                      | N/A            | GET           | N/A             | 404.ejs                   | NO                |
+| /review/	              | index	         | GET	         | read	           | rev-index.ejs	           | NO                |
+| /review/:id	            | show	         | GET	         | read	           | rev-details.ejs	         | NO                |
+| /review/new/:beerId     | new	           | GET	         | read	           | new-rev.ejs	             | NO                |
+| /review/create/:beerId  | create	       | POST	         | create		       |                           | NO                |
+| /review/:id	            | destroy	       | DELETE	       | delete		       |                           | NO                |
 
 
 Installation Instructions
 -------------
 
 - Fork and clone this reository
-- Open 'index.html' file in your editor
+- Initialize NPM
+- install node.js, express.js and configure .json package
+- creat .env nd use PORT = 3000
+- run nodemon server.js and in browser, go to 'http://localhost:3000'
 
 
 Technologies used
@@ -44,8 +53,16 @@ Wireframe
 
 I used [moqups.com](https://moqups.com/) to make my wireframe.  
 
- - [Home]()
- - [Projects]()
- - [Resume]()
- - [Mobile view]()
+ - [Home](public/assets/Wireframe/home.jpg)
+ - [index](public/assets/Wireframe/beer-index.jpg)
+ - [details](public/assets/Wireframe/beer-detail.jpg)
+ - [404](public/assets/Wireframe/404.jpg)
 
+Unsolved Problems/ Major Hurdles
+-------------------------
+
+### Unsolved Problems: 
+although I was able to make it responsive, it wasn't to  my liking.  I would like it to be a bit smoother and customize some aspects of bootstrap a bit more.
+
+### Major Hurdles:
+I had a lot of minor errors that took a lot of time to find and correct.  A misspelling or an "s" were there shouldn't be one.  Also, as much as I enjoy CSS, it does give me a lot of issues.  I look forward to learning more.
