@@ -1,6 +1,6 @@
 # Project-2-Beer-rev
 
-![front page](public/assets/app-frontpage.png)
+![front page](public/assets/app-front.png)
 
 Route Table
 ------------
