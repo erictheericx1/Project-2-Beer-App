@@ -1,3 +1,13 @@
+.container-fluid {
+  background-color: #464233;
+  color: #faf4dd;
+}
+
+.nav-link {
+  color: #faf4dd;
+  text-shadow: .5px .5px .5px #000000;
+}
+
 /* Center the main content */
 main {
   max-width: 900px;

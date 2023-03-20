@@ -17,7 +17,9 @@
             <ul>
                 <% for (let app of revs) { %>
                 <li>
-                    <h4><%= app.reviewer %> - <%= app.title %></h4>
+                    <h4><%= app.reviewer %></h4>
+                    <h5><%= app.beerType %><br>
+                        <%= app.title %></h5><br><br>
                     <a href="/reviews/<%= app._id %>">Read More</a>
                 </li>
                 <% } %>

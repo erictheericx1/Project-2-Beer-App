@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/* Reset styles for cross-browser consistency */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -35,11 +37,66 @@ a:hover {
   color: #ece92d;
 }
 
+/* Header styles */
+header {
+  background-color: #464233;
+  font-family: 'Indie Flower', cursive,serif;
+  color: #faf4dd;
+  text-shadow: .5px .5px .5px #68665f;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-shadow: .5px .5px .5px #000000;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+.container-fluid {
+  background-color: #464233;
+  color: #faf4dd;
+}
+
+.nav-link {
+  color: #faf4dd;
+  text-shadow: .5px .5px .5px #000000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  /* background-color: #464233; */
+  display: flex;
+  list-style: none;
+}
+
+nav li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+nav a {
+  font-size: 1.2rem;
+}
+
 .hero {
   /* background-color: #d7ccc8; */
   color: #1f1f1e;
   padding: 40px;
   text-align: center;
+  height: 10vh;
+  min-height: 175px;
+  margin-bottom: 2rem;
 }
 
 .hero h2 {
@@ -52,34 +109,6 @@ a:hover {
   font-size: 1.5rem;
   text-align: center;
 }
-
-/* Header styles */
-header {
-  font-family: 'Indie Flower', cursive,serif;
-  color: #faf4dd;
-  text-shadow: .5px .5px .5px #68665f;
-  font-weight: bolder;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #464233;
-  padding: 1rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h1 a:hover {
-  text-decoration: none;
-}
-
-.hero {
-  height: 10vh;
-  min-height: 175px;
-  margin-bottom: 2rem;
-}
-
 
 form {
   width: 40%;
@@ -128,24 +157,6 @@ input[type="submit"]:hover {
   background-color: #a39873;
   color: #534f36;
   text-decoration: none;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li:not(:last-child) {
-  margin-right: 1rem;
-}
-
-nav a {
-  font-size: 1.2rem;
 }
 
 /* Footer styles */
