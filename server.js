@@ -16,7 +16,7 @@ const db = require('./models');
 /* Require the routes in the controllers folder
 --------------------------------------------------------------- */
 const beersCtrl = require('./controllers/beers')
-const revsCtrl = require('./controllers/reviews')
+const reviewsCtrl = require('./controllers/reviews')
 
 
 /* Create the Express app
@@ -94,7 +94,7 @@ app.use('/beers', beersCtrl)
 
 // This tells our app to look at the `controllers/reviews.js` file 
 // to handle all routes that begin with `localhost:3000/reviews`
-app.use('/reviews', revsCtrl)
+app.use('/reviews', reviewsCtrl)
 
 
 // The "catch-all" route: Runs for any other URL that doesn't match the above routes

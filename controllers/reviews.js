@@ -19,6 +19,7 @@ router.get('/', (req, res) => {
             for (let beer of beers) {
                 flatList.push(...beer.reviews)
             }
+            console.log(flatList, beers)
             res.render('reviews/rev-index.ejs', {
                 revs: flatList
             })
@@ -35,7 +36,22 @@ router.get('/new/:beerId', (req, res) => {
         .catch(() => res.render('404'))
 })
 
-
+router.get('/read/:id', (req, res) => {
+    db.Beer.findOne(
+        { 'reviews._id': req.params.id },
+        { 'reviews.$': true, _id: false }
+    )
+        // .then(product => {
+        //     console.log(product)
+        //     res.render('reviews/app-details'), {
+        // })
+        .then(beer => {
+            console.log(beer)
+            res.render('reviews/rev-details', {
+                app: beer.reviews[0]
+            })
+        })
+})
 // Create Route
 router.post('/create/:beerId', (req, res) => {
     db.Beer.findByIdAndUpdate(

@@ -12,7 +12,6 @@ main {
 }
 
 .hero h3 {
-  font-size: 2rem;
   text-align: center;
 } */
 
@@ -72,7 +71,7 @@ figcaption {
 
 .listings li a {
   background-color: #464233;
-  border-radius: 30px;
+  border-radius: 20px;
   color: #f7ede2;
   font-weight: bold;
   padding: 15px 30px;
@@ -80,10 +79,11 @@ figcaption {
   bottom: 20px;
   right: 20px;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 .listings li a:hover {
   background-color: #a39873;
   color: #534f36;
-  text-decoration: none;;
+  text-decoration: none;
 }

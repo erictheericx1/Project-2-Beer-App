@@ -91,9 +91,9 @@ div {
 
 img {
   border-radius: 150px;
-  width: 60%;
+  width: 200px;
+  height: 200px;
   min-width: 300px;
-  height: 30%;
   min-height: 150px;
   object-fit: cover;
   margin-bottom: 10px;
@@ -132,16 +132,28 @@ strong {
 
 .btn {
   background-color: #464233;
-  border-radius: 30px;
+  border-radius: 20px;
   color: #f7ede2;
   font-weight: bold;
   padding: 15px 30px;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background-color: #a39873;
   color: #534f36;
+  text-decoration: none;
+}
+
+input[type="submit"] {
+  background-color: #bd1212;
+}
+
+input[type="submit"]:hover {
+  background-color: #ffffff;
+  color: #bd1212;
   text-decoration: none;
 }
 

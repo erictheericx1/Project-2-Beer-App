@@ -3,7 +3,7 @@
 
 <head>
     <%- include('../partials/head.ejs', {title: 'My Reviews | Brewski Buddy'}) %>
-    <link rel="stylesheet" href="/styles/beer-index.css">
+    <link rel="stylesheet" href="/styles/rev-index.css">
 </head>
 
 <body>
@@ -12,10 +12,10 @@
     <main>
         <section class="listings">
             <ul>
-                <% for (let rev of revs) { %>
+                <% for (let app of revs) { %>
                 <li>
-                    <h4><%= rev.reviewerName %> - <%= rev.reviewerTitle %></h4>
-                    <a href="/reviews/<%= rev._id %>">Read More</a>
+                    <h4><%= app.reviewer %> - <%= app.title %></h4>
+                    <a href="/reviews/<%= app._id %>">Read More</a>
                 </li>
                 <% } %>
             </ul>

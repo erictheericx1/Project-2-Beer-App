@@ -8,8 +8,10 @@
 
 <body>
     <%- include('./partials/nav.ejs') %>
-
-    <h1>Edit Beer Form</h1>
+    <section class="hero">
+        <h2>Edit Beer Form</h2>
+        <h4><i>Did we get something wrong or would you like to add something?</i></h4>
+    </section>
 
     <form method="POST" action="/beers/<%= beer._id %>?_method=PUT">
         <!-- Type input -->

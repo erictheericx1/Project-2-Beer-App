@@ -10,14 +10,14 @@
     <%- include('../partials/nav.ejs') %>
 
     <section class="review">
-        <h1>Reviewer: <%= app.reviewerName %></h1>
+        <h1>Reviewer: <%= app.reviewer %></h1>
         <table>
             <tr>
                 <th>
-                    <h2><Title></Title>:</h2>
+                    <h2>Title:</h2>
                 </th>
                 <td>
-                    <h2><%= app.reviewerTitle %></h2>
+                    <h2><%= app.title %></h2>
                 </td>
             </tr>
             <tr>
@@ -25,7 +25,7 @@
                     <h2>Content:</h2>
                 </th>
                 <td>
-                    <h2><%= app.reviewercontent %></h2>
+                    <h2><%= app.content %></h2>
                 </td>
             </tr>
             <tr>

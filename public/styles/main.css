@@ -115,17 +115,20 @@ p {
 
 .btn {
   background-color: #464233;
-  border-radius: 30px;
+  border-radius: 20px;
   color: #f7ede2;
   font-weight: bold;
   padding: 15px 30px;
   text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
   background-color: #a39873;
   color: #534f36;
   text-decoration: none;
+  
 }
 
 /* Footer styles */

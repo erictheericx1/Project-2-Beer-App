@@ -1,12 +1,88 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scrollbar-color: #000000;
+  scrollbar-width: 10px;
+}
+
+*::-webkit-scrollbar {
+  visibility: hidden;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 2px;
+}
+/* General styles */
+body {
+  background: linear-gradient(to top, #faf4dd, #857e56); /*linear-gradient help from classmate and youtube */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  min-height: 100vh;
+}
+
+a {
+  font-family: 'Indie Flower', cursive,serif;
+  color: #f1f1ea;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ece92d;
+}
+
 .hero {
-  height: 20vh;
+  /* background-color: #d7ccc8; */
+  color: #1f1f1e;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.hero h4 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Header styles */
+header {
+  font-family: 'Indie Flower', cursive,serif;
+  color: #faf4dd;
+  text-shadow: .5px .5px .5px #68665f;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #464233;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h1 a:hover {
+  text-decoration: none;
+}
+
+.hero {
+  height: 10vh;
   min-height: 175px;
   margin-bottom: 2rem;
 }
 
 
 form {
-  width: 60%;
+  width: 40%;
   min-width: 300px;
   margin: 0 auto 2rem auto;
 }
@@ -28,6 +104,7 @@ select {
   margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid #ccc;
+  box-shadow: 0 0 5px #000000;
   box-sizing: border-box;
 }
 
@@ -36,17 +113,54 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  background-color: #464233;
+  border-radius: 20px;
+  color: #f7ede2;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  
 }
 
 input[type="submit"]:hover {
-  background-color: #fff;
-  color: #333;
-  border: 1px solid #333;
+  background-color: #a39873;
+  color: #534f36;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+nav a {
+  font-size: 1.2rem;
+}
+
+/* Footer styles */
+footer {
+  font-family: 'Indie Flower', cursive,serif;
+  color: #f1f1ea;
+  display: flex; 
+  flex-direction: column;
+  text-align: center;
+  background-color: #464233;
+  padding: 1rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;  
 }

@@ -16,8 +16,8 @@
             <p><strong>Alcohol By Volume (ABV):</strong> <%= beer.alcoholByVolume %></p>
             <p><strong>Description:</strong> <%= beer.description %></p>
             <p><strong>Rating:</strong> <%= beer.rating %></p>
-            <p><strong>Variations:</strong> <%= beer.condition %></p>
-            <p><strong>Food Pairings:</strong> <%= beer.foodPairings %></p>
+            <p><strong>Variations:</strong> <%= beer.variations %></p>
+            <p><strong>Food Pairings:</strong> <%= beer.foodPairing %></p>
         </section>
 
         <section class="actions">
@@ -28,12 +28,12 @@
             <button class="btn"><a href="/reviews/new/<%= beer._id %>">Review</a></button>
         </section>
         
-        <section class="reviews-list">
+        <!-- <section class="reviews-list">
             <% for (let review of beer.reviews) { %>
                 <p>Reviewer: <%= review.reviewer%></p>
                 <p>Title: <%= review.title%></p>
             <% } %>
-        </section>
+        </section> -->
     </div>
     <%- include('./partials/footer.ejs') %>    
 </body>
