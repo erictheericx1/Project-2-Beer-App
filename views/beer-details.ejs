@@ -3,38 +3,41 @@
 
 <head>
     <%- include('./partials/head.ejs', {title: `${beer.type} | Brewski Buddy`}) %>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
     <link rel="stylesheet" href="/styles/beer-details.css">
 </head>
 
 <body>
     <%- include('./partials/nav.ejs') %>
 
-    <div class="beer">
-        <img src="<%= beer.photo %>">
-        <h2 class="beer-type"><%= beer.type %></h2>
-        <section>
-            <p><strong>Alcohol By Volume (ABV):</strong> <%= beer.alcoholByVolume %></p>
-            <p><strong>Description:</strong> <%= beer.description %></p>
-            <p><strong>Rating:</strong> <%= beer.rating %></p>
-            <p><strong>Variations:</strong> <%= beer.variations %></p>
-            <p><strong>Food Pairings:</strong> <%= beer.foodPairing %></p>
-        </section>
+    <section class="hero">
+        <h2 class="text-4xl font-bold mb-2">Beer Overview</h2>
+        <h3 class="text-xl">Check out some details about this Brewski!</h3>
+    </section>
 
-        <section class="actions">
-            <button class="btn"><a href="/beers/<%= beer._id %>/edit">Edit</a></button>
-            <form method="POST" action="/beers/<%= beer._id %>?_method=DELETE">
-                <input class="btn" type="submit" value="Delete" />
-            </form>
-            <button class="btn"><a href="/reviews/new/<%= beer._id %>">Review</a></button>
-        </section>
-    </div>
-    
-    <%- include('./partials/footer.ejs') %>  
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+    <main>
+        <div class="beer bg-gray-100 py-8">
+            <img src="<%= beer.photo %>" class="w-1/2 h-auto mb-4">
+                <div class="container mx-auto px-4">
+                    <h2 class="text-3xl font-semibold mb-2"><%= beer.type %></h2>
+                
+                    <div class="content">
+                        <p class="mb-2"><strong>Alcohol By Volume (ABV):</strong> <%= beer.alcoholByVolume %></p>
+                        <p class="mb-2"><strong>Description:</strong> <%= beer.description %></p>
+                        <p class="mb-2"><strong>Rating:</strong> <%= beer.rating %></p>
+                        <p class="mb-2"><strong>Variations:</strong> <%= beer.variations %></p>
+                        <p class="mb-4"><strong>Food Pairings:</strong> <%= beer.foodPairing %></p>
+                    </div>
+            
+                    <div class="actions">
+                        <button class="btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4">
+                        <a href="/reviews/new/<%= beer._id %>">Review</a>
+                        </button>
+                    </div>
+                </div>
+        </div>
+    </main>
+    <%- include('./partials/footer.ejs') %>
 
+    </body>
+        
 </html>

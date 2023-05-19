@@ -1,106 +1,28 @@
-/* Main content styles */
-main {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://c4.wallpaperflare.com/wallpaper/97/512/27/a-glass-of-beer-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 8rem 0;
 }
 
-.container-fluid {
-  background-color: #464233;
-  color: #faf4dd;
-}
-
-.nav-link {
-  color: #faf4dd;
-  text-shadow: .5px .5px .5px #000000;
+img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .listings {
-  margin-top: 50px;
+  background-color: #f9f9f9;
 }
 
-.listings h1 {
-  margin-bottom: 20px;
-  text-align: center;
+.beer-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.432);
+  transition: transform 0.3s ease;
 }
 
-.listings ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-  margin-top: 2rem;
-  list-style: none;
-  padding: 0;
-}
-
-.listings li {
-  background-color: rgba(0, 0, 0, 0.2);
-  width: calc(33% - 1rem);
-  min-width: 300px;
-  margin-bottom: 2rem;
-  border-radius: 5px;
-  overflow: hidden;
-  border: 2px solid #464233;
-  padding: 20px;
-  border-radius: 4px;
-  position: relative;
-  text-align: center;
-}
-
-.listings li img {
-  width: 80%;
-  height: 80%;
-  border-radius: 150px;
-  object-fit: scale-down;
-}
-
-figcaption {
-  text-align: left;
-}
-
-.listings li h4 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.listings li p {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.listings li a {
-  background-color: #464233;
-  border-radius: 20px;
-  color: #f7ede2;
-  font-weight: bold;
-  padding: 15px 30px;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.listings li a:hover {
-  background-color: #a39873;
-  color: #534f36;
-  text-decoration: none;
-}
-
-/* Footer styles */
-footer {
-  font-family: 'Indie Flower', cursive,serif;
-  color: #f1f1ea;
-  display: flex; 
-  flex-direction: column;
-  text-align: center;
-  background-color: #464233;
-  padding: 1rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-footer nav {
-  display: flex;
-  justify-content: center;  
+.beer-card:hover {
+  transform: translateY(-0.25rem);
 }

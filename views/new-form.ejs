@@ -3,41 +3,29 @@
 
 <head>
     <%- include('./partials/head.ejs', {title: 'Add a Listing | Brewski Buddy'}) %>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
     <link rel="stylesheet" href="/styles/beer-form.css">
 </head>
 
-<body>
+    <body>
     <%- include('./partials/nav.ejs') %>
 
     <section class="hero">
-        <h2>Create a Listing</h2>
-        <h4><i>Did we miss one?  Help us out, add it!</i></h4>
+        <h2 class="text-4xl font-bold mb-2">Create a Listing</h2>
+        <h3 class="text-xl"><i>Did we miss one? Help us out, add it!</i></h3>
     </section>
 
-    <form method="POST" action="/beers">
-        <!-- type input -->
+    <form method="POST" action="/beers" class="py-8">
         <label for="type">Type:</label>
         <input type="text" id="type" name="type" required>
-        <br>
-        <!-- alcoholByVolume input -->
         <label for="alcoholByVolume">Alcohol By Volume (ABV):</label>
         <input type="text" id="alcoholByVolume" name="alcoholByVolume" required>
-        <br>
-        <!-- Photo input -->
         <label for="photo">Photo (URL):</label>
         <input type="text" id="photo" name="photo" required>
-        <br>
-        <!-- discription input -->
         <label for="description">Description:</label>
         <textarea id="description" name="description" required></textarea>
-        <br>
-        <!-- rating input -->
-        <label for="rating">rating:</label>
+        <label for="rating">Rating:</label>
         <select id="rating" name="rating">
-            <optgroup label=" ratings">
+            <optgroup label="Ratings">
                 <option value="0.5">0.5</option>
                 <option value="1.0">1.0</option>
                 <option value="1.5">1.5</option>
@@ -50,21 +38,17 @@
                 <option value="5.0">5.0</option>
             </optgroup>
         </select>
-        <br>
-        <!-- variations input -->
+        
         <label for="variations">Variations:</label>
         <input type="text" id="variations" name="variations" value="Unknown">
-        <br>
-        <!-- foodPairing input -->
+
         <label for="foodPairing">Food Pairing:</label>
         <input type="text" id="foodPairing" name="foodPairing" value="Unknown">
-        
-        <input type="submit" value="Create beer">
+
+        <input type="submit" value="Create beer" class="mt-4">
     </form>
 
     <%- include('./partials/footer.ejs') %>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+    </body>
 
 </html>

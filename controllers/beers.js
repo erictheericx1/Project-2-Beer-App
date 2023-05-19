@@ -44,15 +44,15 @@ router.get('/:id', function (req, res) {
         .catch(() => res.render('404'))
 })
 
-// Edit Route 
-router.get('/:id/edit', (req, res) => {
-    db.Beer.findById(req.params.id)
-        .then(beer => {
-            res.render('edit-form', {
-                beer: beer
-            })
-        })
-})
+// // Edit Route 
+// router.get('/:id/edit', (req, res) => {
+//     db.Beer.findById(req.params.id)
+//         .then(beer => {
+//             res.render('edit-form', {
+//                 beer: beer
+//             })
+//         })
+// })
 
 // Update Route 
 router.put('/:id', (req, res) => {
@@ -64,11 +64,11 @@ router.put('/:id', (req, res) => {
         .then(beer => res.redirect('/beers/' + beer._id))
 })
 
-// Destroy Route 
-router.delete('/:id', (req, res) => {
-    db.Beer.findByIdAndRemove(req.params.id)
-        .then(() => res.redirect('/beers'))
-})
+// // Destroy Route 
+// router.delete('/:id', (req, res) => {
+//     db.Beer.findByIdAndRemove(req.params.id)
+//         .then(() => res.redirect('/beers'))
+// })
 
 
 /* Export these routes so that they are accessible in `server.js`

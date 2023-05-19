@@ -3,51 +3,36 @@
 
 <head>
     <%- include('./partials/head.ejs', {title: `About Brewski Buddy`}) %>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
     <link rel="stylesheet" href="/styles/about.css">
 </head>
 
-<body>
+    <body>
     <%- include('./partials/nav.ejs') %>
 
-    <main>
-        <section class="content">
-            <h1>About Us</h1>
-            <h4>Here to help you learn about brewskies, in hopes of helping people drink more Responsibility!</h4>
-            <br>
-            <h1>Our Mission</h1>
-            <p>Have you ever been curious about the world of beer but not quite sure where to start? Tired of the same 
-                stuff? Look no further! This collection of beers offers a great opportunity to explore and discover 
-                new brews. </p>
-            <p>At Brewski Buddy, Not only will you learn about the different types of beers, but we'll also share 
-                some tips on how to enjoy them responsibly. After all, drinking beer can be a fun and social activity 
-                when done in moderation. We encourage you to savor each beer, taking note of its unique characteristics
-                and flavors, and experiment with pairing them with different foods.</p>
-            <p>Whether you're enjoying a cold brew on a sunny day or kicking back with friends on a Friday night, we 
-                hope this selection of beers helps you appreciate the art and science behind brewing, all while having 
-                a good time.</p>
-            <h1>Our Values</h1>
-            <ul>
-                <li>Bold: both in beer and our approach to business. We're not afraid to take risks, try new things,
-                    and push the boundaries of traditional brewing techniques.</li>
-                <li>Responsibility: We believe that beer can be enjoyed in moderation and as part of a balanced 
-                    lifestyle, but we also recognize the dangers of excessive drinking.
-                </li>
-                <li>Education: We're constantly learning about new brewing techniques, ingredients, and flavor 
-                    profiles, and we love to share that knowledge with our customers.
-                </li>
-                <li>Wisdom: Wisdom is about more than just knowledge; it's also about using that knowledge to make 
-                    wise choices.
-                </li>
+    <section class="hero">
+        <h2 class="text-4xl font-bold mb-2">About Us</h2>
+        <h3 class="text-xl">Here to help you learn about brewskies, in hopes of helping people drink more responsibly!</h3>
+
+    </section>
+
+    <main class="container mx-auto px-4 py-8">
+        <section class="max-w-2xl mx-auto">
+            <h1 class="text-3xl font-semibold mb-4">Our Mission</h1>
+            <p class="mb-4">Have you ever been curious about the world of beer but not quite sure where to start? Tired of the same stuff? Look no further! This collection of beers offers a great opportunity to explore and discover new brews.</p>
+            <p class="mb-4">At Brewski Buddy, not only will you learn about the different types of beers, but we'll also share some tips on how to enjoy them responsibly. After all, drinking beer can be a fun and social activity when done in moderation. We encourage you to savor each beer, taking note of its unique characteristics and flavors, and experiment with pairing them with different foods.</p>
+            <p class="mb-6">Whether you're enjoying a cold brew on a sunny day or kicking back with friends on a Friday night, we hope this selection of beers helps you appreciate the art and science behind brewing, all while having a good time.</p>
+
+            <h1 class="text-3xl font-semibold mb-4">Our Values</h1>
+            <ul class="list-disc pl-6">
+                <li class="mb-2">Bold: both in beer and our approach to business. We're not afraid to take risks, try new things, and push the boundaries of traditional brewing techniques.</li>
+                <li class="mb-2">Responsibility: We believe that beer can be enjoyed in moderation and as part of a balanced lifestyle, but we also recognize the dangers of excessive drinking.</li>
+                <li class="mb-2">Education: We're constantly learning about new brewing techniques, ingredients, and flavor profiles, and we love to share that knowledge with our customers.</li>
+                <li class="mb-2">Wisdom: Wisdom is about more than just knowledge; it's also about using that knowledge to make wise choices.</li>
             </ul>
         </section>
     </main>
 
-    <%- include('./partials/footer.ejs') %>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-</body>
+        <%- include('./partials/footer.ejs') %>
+    </body>
 
 </html>

@@ -1,13 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 /* Reset styles for cross-browser consistency */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scrollbar-color: #000000;
-  scrollbar-width: 10px;
-}
 
+/* Scrollbar styles */
 *::-webkit-scrollbar {
   visibility: hidden;
   width: 10px;
@@ -18,143 +16,15 @@
   border-radius: 2px;
 }
 
-/* General styles */
-body {
-  background: linear-gradient(to top, #faf4dd, #857e56); /*linear-gradient help from classmate and youtube */
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000;
-  min-height: 100vh;
-}
+* {
+background-color: rgb(145, 112, 72);
+}  
 
-a {
-  font-family: 'Indie Flower', cursive,serif;
-  color: #f1f1ea;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ece92d;
-}
-
-/* Header styles */
-header {
-  font-family: 'Indie Flower', cursive,serif;
-  color: #faf4dd;
-  text-shadow: .5px .5px .5px #68665f;
-  font-weight: bolder;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #464233;
-  padding: 1rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  text-shadow: .5px .5px .5px #000000;
-}
-
-h1 a:hover {
-  text-decoration: none;
-}
-
-.container-fluid {
-  background-color: #464233;
-  color: #faf4dd;
-}
-
-.nav-link {
-  color: #faf4dd;
-  text-shadow: .5px .5px .5px #000000;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li:not(:last-child) {
-  margin-right: 1rem;
-}
-
-nav a {
-  font-size: 1.2rem;
-}
-
-/* Hero section styles */
 .hero {
-  /* background-color: #d7ccc8; */
-  color: #1f1f1e;
-  padding: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://c4.wallpaperflare.com/wallpaper/97/512/27/a-glass-of-beer-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
   text-align: center;
-}
-
-.hero h2 {
-  font-size: 3rem;
-  margin-bottom: .5rem;
-  text-align: center;
-}
-
-.hero h3 {
-  font-size: 2rem;
-  text-align: center;
-}
-
-.hero h4 {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-/* Content section */
-.content {
-  /* background-color: #e0cfc2; */
-  color: #1f1f1e;
-  padding: 80px;
-  text-align: center;
-}
-
-p {
-  margin-bottom: 1rem;
-}
-
-.btn {
-  background-color: #464233;
-  border-radius: 20px;
-  color: #f7ede2;
-  font-weight: bold;
-  padding: 15px 30px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #a39873;
-  color: #534f36;
-  text-decoration: none;
-  
-}
-
-/* Footer styles */
-footer {
-  font-family: 'Indie Flower', cursive,serif;
-  color: #f1f1ea;
-  display: flex; 
-  flex-direction: column;
-  text-align: center;
-  background-color: #464233;
-  padding: 1rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-footer nav {
-  display: flex;
-  justify-content: center;  
+  padding: 8rem 0;
 }

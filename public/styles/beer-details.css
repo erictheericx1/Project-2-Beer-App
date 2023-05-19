@@ -1,184 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-/* Reset styles for cross-browser consistency */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scrollbar-color: #000000;
-  scrollbar-width: 10px;
-}
-
-*::-webkit-scrollbar {
-  visibility: hidden;
-  width: 10px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #333;
-  border-radius: 2px;
-}
-
-/* General styles */
-body {
-  background: linear-gradient(to top, #faf4dd, #857e56); /*linear-gradient help from classmate and youtube */
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000;
-  min-height: 100vh;
-}
-
-a {
-  font-family: 'Indie Flower', cursive,serif;
-  color: #f1f1ea;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #ece92d;
-}
-
-/* Header styles */
-header {
-  font-family: 'Indie Flower', cursive,serif;
-  color: #faf4dd;
-  text-shadow: .5px .5px .5px #68665f;
-  font-weight: bolder;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #464233;
-  padding: 1rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  text-shadow: .5px .5px .5px #000000;
-}
-
-h1 a:hover {
-  text-decoration: none;
-}
-
-.container-fluid {
-  background-color: #464233;
-  color: #faf4dd;
-}
-
-.nav-link {
-  color: #faf4dd;
-  text-shadow: .5px .5px .5px #000000;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li:not(:last-child) {
-  margin-right: 1rem;
-}
-
-nav a {
-  font-size: 1.2rem;
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://c4.wallpaperflare.com/wallpaper/97/512/27/a-glass-of-beer-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 8rem 0;
 }
 
 .beer {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid #464233;
-  border-radius: 50px;
-  padding: 20px;
-  margin: 4vh auto;
-  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.beer img {
+  flex-shrink: 0;
+  margin-right: 1rem;
+  max-width: 50%;
+  height: auto;
+}
+
+.beer .container {
+  flex-grow: 1;
 }
 
 img {
-  border-radius: 150px;
-  width: 200px;
-  height: 200px;
-  min-width: 300px;
-  min-height: 150px;
-  object-fit: cover;
-  margin-bottom: 10px;
+  border-radius: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
-.beer-type {
-  font-size: 32px;
-  font-style: italic;
-  text-decoration: underline;
-  font-weight: bolder;
-  margin-bottom: 10px;
-}
-
-section {
-  text-align: left;
-  margin: 0 20%;
-}
-
-p {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-strong {
+h2 {
+  font-size: 2rem;
+  text-align: center;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-/* Style Action Buttons */
+section.container p {
+  margin-bottom: 0.5rem;
+}
+
 .actions {
-  margin-top: 1rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 1rem;
 }
 
 .btn {
-  background-color: #464233;
-  border-radius: 20px;
-  color: #f7ede2;
+  background-color: #4b5563;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
   font-weight: bold;
-  padding: 15px 30px;
-  text-decoration: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #a39873;
-  color: #534f36;
+  background-color: #374151;
+}
+
+.btn a {
+  color: white;
   text-decoration: none;
-}
-
-input[type="submit"] {
-  background-color: #bd1212;
-}
-
-input[type="submit"]:hover {
-  background-color: #ffffff;
-  color: #bd1212;
-  text-decoration: none;
-}
-
-/* Footer styles */
-footer {
-  font-family: 'Indie Flower', cursive,serif;
-  color: #f1f1ea;
-  display: flex; 
-  flex-direction: column;
-  text-align: center;
-  background-color: #464233;
-  padding: 1rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-footer nav {
-  display: flex;
-  justify-content: center;  
 }
