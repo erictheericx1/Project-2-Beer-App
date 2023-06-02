@@ -8,7 +8,9 @@
 }
 
 .btn {
+  width: 200px;
+  padding: 15px 32px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin: 0 auto;
 }

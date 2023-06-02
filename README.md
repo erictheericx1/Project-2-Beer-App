@@ -17,11 +17,11 @@ Route Table
 | /beers/:id              | destroy        | DELETE        | delete          |                           | NO                |
 | /about                  | N/A            | GET           | N/A             | about.ejs                 | NO                |
 | /*                      | N/A            | GET           | N/A             | 404.ejs                   | NO                |
-| /review/	              | index	         | GET	         | read	           | rev-index.ejs	           | NO                |
-| /review/:id	            | show	         | GET	         | read	           | rev-details.ejs	         | NO                |
-| /review/new/:beerId     | new	           | GET	         | read	           | new-rev.ejs	             | NO                |
-| /review/create/:beerId  | create	       | POST	         | create		       |                           | NO                |
-| /review/:id	            | destroy	       | DELETE	       | delete		       |                           | NO                |
+| /reviews/	              | index	         | GET	         | read	           | rev-index.ejs	           | NO                |
+| /reviews/:id	            | show	         | GET	         | read	           | rev-details.ejs	         | NO                |
+| /reviews/new/:beerId     | new	           | GET	         | read	           | new-rev.ejs	             | NO                |
+| /reviews/create/:beerId  | create	       | POST	         | create		       |                           | NO                |
+| /reviews/:id	            | destroy	       | DELETE	       | delete		       |                           | NO                |
 
 
 Installation Instructions

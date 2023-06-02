@@ -3,6 +3,7 @@
 
 <head>
     <%- include('./partials/head.ejs', {title: `${beer.type} | Brewski Buddy`}) %>
+    <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/beer-details.css">
 </head>
 
@@ -15,8 +16,8 @@
     </section>
 
     <main>
-        <div class="beer bg-gray-100 py-8">
-            <img src="<%= beer.photo %>" class="w-1/2 h-auto mb-4">
+        <div class="beer bg-gray-100 py-8 rounded-md">
+            <img src="<%= beer.photo %>" class="w-1/2 h-1 my-4 px-8">
                 <div class="container mx-auto px-4">
                     <h2 class="text-3xl font-semibold mb-2"><%= beer.type %></h2>
                 
@@ -29,9 +30,8 @@
                     </div>
             
                     <div class="actions">
-                        <button class="btn bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4">
-                        <a href="/reviews/new/<%= beer._id %>">Review</a>
-                        </button>
+                        <a class="btn bg-yellow-800 hover:bg-gray-600 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow" href="/reviews/new/<%= beer._id %>">Review</a>
+                        <a class="btn bg-yellow-800 hover:bg-gray-600 text-white font-semibold py-2 px-4 border border-gray-400 rounded shadow" href="/reviews">View Reviews</a>
                     </div>
                 </div>
         </div>

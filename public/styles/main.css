@@ -2,23 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
 /* Reset styles for cross-browser consistency */
 
-/* Scrollbar styles */
-*::-webkit-scrollbar {
-  visibility: hidden;
-  width: 10px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #333;
-  border-radius: 2px;
-}
-
 * {
-background-color: rgb(145, 112, 72);
+  font-family: 'Rokkitt', serif;
 }  
+
 
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://c4.wallpaperflare.com/wallpaper/97/512/27/a-glass-of-beer-wallpaper-preview.jpg');
@@ -27,4 +17,16 @@ background-color: rgb(145, 112, 72);
   color: white;
   text-align: center;
   padding: 8rem 0;
+}
+
+
+/* Scrollbar styles */
+*::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f9f9f9;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 2px;
 }

@@ -1,149 +1,50 @@
-/* Reset styles for cross-browser consistency */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scrollbar-color: #000000;
-  scrollbar-width: 10px;
+html, body {
+  height: 100%;
 }
 
-*::-webkit-scrollbar {
-  visibility: hidden;
-  width: 10px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #333;
-  border-radius: 2px;
-}
-
-/* General styles */
-body {
-  background: linear-gradient(to top, #faf4dd, #857e56); /*linear-gradient help from classmate and youtube */
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000;
+#wrapper {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
 }
 
-a {
-  font-family: 'Indie Flower', cursive,serif;
-  color: #f1f1ea;
-  text-decoration: none;
+main {
+  flex: 1;
 }
 
-a:hover {
-  color: #ece92d;
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://c4.wallpaperflare.com/wallpaper/97/512/27/a-glass-of-beer-wallpaper-preview.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 8rem 0;
 }
 
-/* Header styles */
-header {
-  font-family: 'Indie Flower', cursive,serif;
-  color: #faf4dd;
-  text-shadow: .5px .5px .5px #68665f;
-  font-weight: bolder;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #464233;
-  padding: 1rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  text-shadow: .5px .5px .5px #000000;
-
-}
-
-h1 a:hover {
-  text-decoration: none;
-}
-
-.container-fluid {
-  background-color: #464233;
-  color: #faf4dd;
-}
-
-.nav-link {
-  color: #faf4dd;
-  text-shadow: .5px .5px .5px #000000;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li:not(:last-child) {
-  margin-right: 1rem;
-}
-
-nav a {
-  font-size: 1.2rem;
+img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 }
 
 .listings {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  margin: 100px;
-  margin-top: 50px;
-
+  background-color: #ffffff;
 }
 
-.listings ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 2rem;
-  padding: 0;
+.review-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.432);
+  transition: transform 0.3s ease;
 }
 
-.listings li {
-  row-gap: 3;  
-  background-color: rgba(0, 0, 0, 0.2);
-  width: calc(33% - 1rem);
-  min-width: 300px;
-  margin-bottom: 2rem;
-  border-radius: 25px;
-  overflow: hidden;
-  border: 2px solid #464233;
-  padding: 20px;
-  position: relative;
-  text-align: center;
+.review-card:hover {
+  transform: translateY(-0.25rem);
 }
 
-.listings li h4 h5 {
+.btn {
+  width: 150px;
+  padding: 15px 32px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 100px;
-  font-size: 24px;
-  margin-bottom: 10px;
+  margin: 0 auto;
 }
-
-.listings li a {
-  background-color: #464233;
-  border-radius: 20px;
-  color: #f7ede2;
-  font-weight: bold;
-  padding: 15px 30px;
-  position: absolute;
-  bottom: 10px;
-  align-items: center;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.listings li a:hover {
-  background-color: #a39873;
-  color: #534f36;
-  text-decoration: none;
-}
-

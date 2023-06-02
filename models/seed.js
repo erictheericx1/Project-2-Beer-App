@@ -10,6 +10,16 @@ const beers = [
     isFeatured: true
   },
   {
+    type: "Hefeweizen",
+    alcoholByVolume: 5.0,
+    photo: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Hefeweizen_Glass.jpg/800px-Hefeweizen_Glass.jpg",
+    description: "A refreshing and unfiltered wheat beer with distinct banana and clove flavors.",
+    rating: 4.5,
+    variations: "Dunkelweizen, Kristallweizen",
+    foodPairing: "Grilled sausages, seafood, light salads",
+    isFeatured: false
+  },
+  {
     type: "Ale",
     alcoholByVolume: 6.5,
     photo: "https://media.istockphoto.com/id/1204042311/photo/amber-ale.jpg?s=612x612&w=0&k=20&c=mU9SqgFxNLqJFCM3jwir3mKWlGXVzftaU-xnOdFuhl0=",
