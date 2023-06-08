@@ -20,6 +20,21 @@
 }
 
 
+/* Navbar styles */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon--line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 4px;
+}
+
+
 /* Scrollbar styles */
 *::-webkit-scrollbar {
   width: 8px;
@@ -29,4 +44,57 @@
 *::-webkit-scrollbar-thumb {
   background-color: #333;
   border-radius: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .menu-icon__line {
+    transition: background-color 0.2s ease-in-out;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ .menu-icon__line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  input[type="checkbox"]:checked ~ .menu-icon__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  input[type="checkbox"]:checked ~ .menu-icon__line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .flex ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #a16207;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .flex ul li {
+    margin-bottom: 4px;
+  }
+
+  input[type="checkbox"]:checked ~ .flex ul {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero{
+    padding: 6rem 0;
+  }
 }

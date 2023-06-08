@@ -3,7 +3,14 @@
     <div class="container mx-auto px-4 flex justify-between items-center">
       <h2 class="text-yellow-700 text-3xl font-semibold italic">Brewski Buddy</h2>
       
-      <ul class="flex space-x-4">
+      <input type="checkbox" id="menu-toggle" class="hidden">
+      <label for="menu-toggle" class="menu-icon cursor-pointer">
+        <span class="menu-icon__line block bg-yellow-700 h-px w-6 mb-1"></span>
+        <span class="menu-icon__line block bg-yellow-700 h-px w-6 mb-1"></span>
+        <span class="menu-icon__line block bg-yellow-700 h-px w-6 mb-1"></span>
+      </label>  
+
+      <ul class="flex space-x-4" id="menu">
         <li><a href="/" class="text-yellow-700 hover:text-gray-100">Home</a></li>
         <li><a href="/about" class="text-yellow-700 hover:text-gray-100">About</a></li>
         <li><a href="/beers" class="text-yellow-700 hover:text-gray-100">Learn about a Brewski</a></li>
@@ -12,5 +19,19 @@
       </ul>
     </div>
   </nav>
-  
 </header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', function() {
+      if (this.checked) {
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
+  });
+</script>
