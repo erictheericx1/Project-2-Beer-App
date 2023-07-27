@@ -3,35 +3,41 @@
     <div class="container mx-auto px-4 flex justify-between items-center">
       <h2 class="text-yellow-700 text-3xl font-semibold italic">Brewski Buddy</h2>
       
-      <input type="checkbox" id="menu-toggle" class="hidden">
-      <label for="menu-toggle" class="menu-icon cursor-pointer">
-        <span class="menu-icon__line block bg-yellow-700 h-px w-6 mb-1"></span>
-        <span class="menu-icon__line block bg-yellow-700 h-px w-6 mb-1"></span>
-        <span class="menu-icon__line block bg-yellow-700 h-px w-6 mb-1"></span>
-      </label>  
+<!-- Burger Menu Icon -->
+        <button id="burger-btn" class="md:hidden focus:outline-none">
+          <svg class="w-6 h-6 text-yellow-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
 
-      <ul class="flex space-x-4" id="menu">
-        <li><a href="/" class="text-yellow-700 hover:text-gray-100">Home</a></li>
-        <li><a href="/about" class="text-yellow-700 hover:text-gray-100">About</a></li>
-        <li><a href="/beers" class="text-yellow-700 hover:text-gray-100">Learn about a Brewski</a></li>
-        <!-- <li><a href="/beers/new" class="text-yellow-700 hover:text-gray-100">Add A Brewski</a></li> -->
-        <!-- <li><a href="/reviews" class="text-yellow-700 hover:text-gray-100">Reviews</a></li> -->
-      </ul>
+<!-- Navbar Links -->
+      <div class="hidden md:flex space-x-4">
+        <a href="/" class="text-yellow-700 hover:text-gray-100">Home</a>
+        <a href="/about" class="text-yellow-700 hover:text-gray-100">About</a>
+        <a href="/beers" class="text-yellow-700 hover:text-gray-100">Learn about a Brewski</a>
+        <!--<a href="/beers/new" class="text-yellow-700 hover:text-gray-100">Add A Brewski</a>-->
+        <!--<a href="/reviews" class="text-yellow-700 hover:text-gray-100">Reviews</a>-->
+      </div>
     </div>
   </nav>
+      <!-- Mobile Menu (Hidden by Default) -->
+    <div id="mobile-menu" class="md:hidden bg-yellow-600 p-4 hidden">
+      <div class="flex flex-col h-full justify-center items-center">
+        <a href="/" class="text-2xl text-yellow-300 hover:text-gray-100">Home</a>
+        <a href="/about" class="text-2xl text-yellow-300 hover:text-gray-100">About</a>
+        <a href="/beers" class="text-2xl text-yellow-300 hover:text-gray-100">Learn about a Brewski</a>
+        <!--<a href="/beers/new" class="text-yellow-700 hover:text-gray-100">Add A Brewski</a>-->
+        <!--<a href="/reviews" class="text-yellow-700 hover:text-gray-100">Reviews</a>-->
+      </div>
+    </div>
 </header>
 
+<!-- JavaScript for mobile menu -->
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
+  const burgerBtn = document.getElementById('burger-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-    menuToggle.addEventListener('click', function() {
-      if (this.checked) {
-        menu.classList.remove('hidden');
-      } else {
-        menu.classList.add('hidden');
-      }
-    });
+  burgerBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
   });
 </script>

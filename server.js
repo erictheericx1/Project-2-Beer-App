@@ -71,12 +71,10 @@ app.get('/seed', function (req, res) {
     // Remove any existing beers
     db.Beer.deleteMany({})
         .then(removedBeers => {
-            console.log(`Removed ${removedBeers.length} beers`)
 
             // Seed the beers collection with the seed data
             db.Beer.insertMany(db.seedBeer)
                 .then(addedBeers => {
-                    console.log(`Added ${addedBeers.length} beers to be tasted`)
                     res.json(addedBeers)
                 })
         })
@@ -106,5 +104,4 @@ app.get('*', function (req, res) {
 /* Tell the app to listen on the specified port
 --------------------------------------------------------------- */
 app.listen(process.env.PORT, function () {
-    console.log('Express is listening to port', process.env.PORT);
 });
