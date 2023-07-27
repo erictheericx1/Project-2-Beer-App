@@ -1,6 +1,6 @@
 # Project-2-Beer-rev
 
-![front page](public/assets/app-front.png)
+![front page](public/assets/brewski-buddy.png)
 
 Route Table
 ------------
